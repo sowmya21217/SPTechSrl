@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eaeaf1;
+}
+
+li {
+    float: left;
+}
+ 
+li img {
+    display: block;
+    text-align: center;
+    padding: 37px 20px;
+    text-decoration: none;
+}
+li h1 {
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    color: #1f1f7a;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+  
+
+img {
+    width: 50px;
+    height: 60px;
+}
+h1 {
+    color: #1f1f7a;    
+}
+.heading {
+    padding-right: 500px; 
+}
