@@ -1,5 +1,5 @@
 footer{
-    position: fixed;
+    position:relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -74,7 +74,6 @@ footer{
 float: left;
     font-size: 14px;
     word-spacing: 2px;
-    text-transform: capitalize;
     text-align: center;
     justify-content: center;
 }

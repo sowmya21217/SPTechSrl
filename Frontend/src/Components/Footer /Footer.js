@@ -12,9 +12,10 @@ const Footer = () => {
            <div className="footer-menu">
                       <ul className="f-menu">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Contact</a></li>
-                        <li><a href="/">Blog</a></li>
+                        <li><a href="/About">About</a></li>
+                        <li><a href="/Services">Services</a></li>
+                        <li><a href="/Contacts">Contact</a></li>
+                        
                       </ul>
                     </div>
             <ul className="socials">
@@ -26,7 +27,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="footer-bottom">
-            <p className="copyright">copyright &copy; <a href="/">Foolish Developer</a>  </p>
+            <p className="copyright">copyright &copy; <a href="/">2022 SP Tech Srl Company.  All rights reserved</a></p>
                    
         </div>
     </footer>
