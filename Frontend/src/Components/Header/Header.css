@@ -1,44 +1,87 @@
-.header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #eaeaf1;
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .navigation-menu ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 77px);
+      background-color: white;
+      border-top: 1px solid black;
+      display: none;
+    }
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+    .navigation-menu li a {
+      color: rgb(64, 33, 137);;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .navigation-menu li:hover {
+      background-color: #eee;
+    }   
 }
-
-li {
-    float: left;
+img {
+    height:50px;
+    width:40px;
 }
- 
-li img {
-    display: block;
-    text-align: center;
-    padding: 37px 20px;
-    text-decoration: none;
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
 }
-li h1 {
-    display: block;
-    text-align: center;
-    padding: 0px 0px;
-    text-decoration: none;
-}
-
-li a {
-    display: block;
-    color: #1f1f7a;
-    text-align: center;
-    padding: 30px 30px;
-    text-decoration: none;
+.hamburger:hover {
+    background-color: #2642af;
 }
   
-
-img {
-    width: 50px;
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.brand-name {
+    text-decoration: none;
+    color: rgb(47, 24, 103);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+.navigation-menu {
+    margin-left: auto;
+}
+.navigation {
     height: 60px;
-}
-h1 {
-    color: #1f1f7a;    
-}
-.heading {
-    padding-right: 500px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: rgb(229, 222, 243);
+    color: rgb(115, 60, 244);
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }

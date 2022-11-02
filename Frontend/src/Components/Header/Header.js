@@ -1,17 +1,45 @@
-import React from 'react';
-import './Header.css'
+import React, { useState } from "react";
+import "./Header.css";
+
 const Header = () => {
-    return (
-        <ul className='header'>
-          <li ><img className="logo" src= "Images/logo.jpeg" alt='SP Tech srl'/></li>
-          <li ><h1 className='heading'><a href="#Home">SP Tech Srl</a></h1></li> 
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Career">Career</a></li>
-          <li><a href="#Contacts">Contacts</a></li>
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  return (
+    <nav className="navigation">
+      <img className="logo" src="Images/logo.jpeg" alt="SP Tech srl" />
+      <a href="/" className="brand-name">
+        SP Tech Srl
+      </a>  
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* hamburger svg code... */}
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <a href="/About">About</a>
+          </li>
+          <li>
+            <a href="/Services">Services</a>
+          </li>
+          <li>
+            <a href="/Career">Career</a>
+          </li>
+          <li>
+            <a href="/Contacts">Contacts</a>
+          </li>
         </ul>
-    );
+      </div>
+    </nav>
+  );
+};
 
-}
-
-export default Header; 
+export default Header;
