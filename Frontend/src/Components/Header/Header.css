@@ -30,8 +30,8 @@
     }   
 }
 img {
-    height:50px;
-    width:40px;
+    height:65px;
+    width:80px;
 }
 .hamburger {
     border: 0;
@@ -81,7 +81,11 @@ img {
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: rgb(229, 222, 243);
+    background-color: white;
     color: rgb(115, 60, 244);
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+.tag {
+   font-size: 10px;
+   padding: 1px; 
 }

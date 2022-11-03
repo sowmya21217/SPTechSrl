@@ -6,10 +6,12 @@ const Header = () => {
 
   return (
     <nav className="navigation">
-      <img className="logo" src="Images/logo.jpeg" alt="SP Tech srl" />
+      <img className="logo" src="Images/logo1.jpeg" alt="SP Tech srl" />
       <a href="/" className="brand-name">
         SP Tech Srl
-      </a>  
+        <p className="tag">Solution For every Tech</p> 
+      </a> 
+      
       <button
         className="hamburger"
         onClick={() => {

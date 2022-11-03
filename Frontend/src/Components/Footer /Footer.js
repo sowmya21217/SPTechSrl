@@ -23,7 +23,7 @@ const Footer = () => {
                 <li><a href="/"><i className="fa fa-twitter"></i></a></li>
                 <li><a href="/"><i className="fa fa-google-plus"></i></a></li>
                 <li><a href="/"><i className="fa fa-youtube"></i></a></li>
-                <li><a href="/"><i className="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/86815580/admin/"><i className="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
         <div className="footer-bottom">
