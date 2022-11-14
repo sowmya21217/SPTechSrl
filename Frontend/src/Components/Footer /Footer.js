@@ -1,36 +1,60 @@
 import React from "react";
-import "./Footer.css";
+import styled  from "styled-components/macro";
+import { footerData } from "../../data/MenuData";
+
+const Footer1 = styled.footer`
+  background: grey;
+  position:relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding: 0px 0px;
+  color: #fff;
+
+`;
+
+const Content = styled.div`
+ display: flex;
+ align-items: center;
+ marign-right: -48px;
+ justify-content: space-between;
+ padding: 1rem 2rem;
+ width: 100%;
+ color: #fff;
+
+  @media screen and (max-width: 768px){
+  display: none;
+  } 
+`;
+
+const FooterMenuLinks = styled.div``;
+
+const CopyRight = styled.div`
+  text-align: center;
+  justify-content: center;
+  textdecoration: none;
+  color: black;
+
+`;
+
 
 const Footer = () => {
   return (
-    <footer>
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      ></link>
-           <div className="footer-content">
-           <div className="footer-menu">
-                      <ul className="f-menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/About">About</a></li>
-                        <li><a href="/Services">Services</a></li>
-                        <li><a href="/Contacts">Contact</a></li>
-                        
-                      </ul>
-                    </div>
-            <ul className="socials">
-                <li><a href="/"><i className="fa fa-facebook"></i></a></li>
-                <li><a href="/"><i className="fa fa-twitter"></i></a></li>
-                <li><a href="/"><i className="fa fa-google-plus"></i></a></li>
-                <li><a href="/"><i className="fa fa-youtube"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/86815580/admin/"><i className="fa fa-linkedin-square"></i></a></li>
-            </ul>
-        </div>
-        <div className="footer-bottom">
-            <p className="copyright">copyright &copy; <a href="/">2022 SP Tech Srl Company.  All rights reserved</a></p>
-                   
-        </div>
-    </footer>
+    <Footer1>
+      <Content>
+        {footerData.map((item,index) => {
+          return(
+            <FooterMenuLinks to={item.link} key ={index}>
+            {item.title}
+            </FooterMenuLinks>
+          )})}
+      </Content>
+      <CopyRight>
+        <p>copyright &copy; 2022 SP Tech Srl Company.  All rights reserved</p>          
+      </CopyRight>
+    </Footer1>
   );
 };
 export default Footer;
