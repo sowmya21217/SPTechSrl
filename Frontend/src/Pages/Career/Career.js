@@ -6,12 +6,15 @@ import Header from "../../Components/Header/Header";
 import GlobalStyle from "../globalStyles";
 
 const Section = styled.div`
-width: 90%;
-padding: 6rem 2rem;
+width: 10%;
+
+padding: 6rem 40rem;
 h1{
   text-align: center;
+  
 }
 `;
+
 const Career = ({heading}) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,14 +22,14 @@ const Career = ({heading}) => {
       setIsOpen(!isOpen);
     };
     return(
-        <div>
+        <div style={{background: 'lightgrey'}}>
             <GlobalStyle />
             <Header toggle={toggle} />
             <Dropdown isOpen={isOpen} toggle={toggle} />
              <Section>
                  <h1>{heading}</h1>
              </Section>
-            <Footer style ={{position: 'fixed' , padding: '1rem'}}/>
+            <Footer />
         </div>
     );
 }

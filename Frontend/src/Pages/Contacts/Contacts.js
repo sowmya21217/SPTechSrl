@@ -9,18 +9,13 @@ import { Form } from 'react-router-dom';
 import Dropdown from '../../Components/Dropdown';
 import GlobalStyle from '../globalStyles';
 const Section = styled.div`
- 
-`;
-const Section1 = styled.div`
-   padding: 10rem 0rem;
 
- 
 `;
 
 const WrapperGrid = styled.div`
    padding: 1rem calc((100vw-1300px) / 2);
    width: 90%;
-   height: 390px;
+   height: 500px;
    padding: 7rem 1rem;
    @media screen and(max-width: 768px){
     width: 20%;
@@ -45,7 +40,7 @@ const Textarea = styled.textarea`
 
 const Head = styled.div`
     font-size: 3rem;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
 `;
@@ -72,7 +67,7 @@ const Contacts = () => {
   };
 
 return (
-<div>
+<div style={{background: 'lightgrey',justifyContent: 'center', textAlign: 'center'}}>
   <GlobalStyle />
   <Header toggle={toggle} />
   <Dropdown isOpen={isOpen} toggle={toggle} />
@@ -88,9 +83,9 @@ return (
     </WrapperGrid>
   </Form>
   </Section>
-  <Section1>
+ 
     <Footer />
-    </Section1>
+   
   </div>
 );
 }

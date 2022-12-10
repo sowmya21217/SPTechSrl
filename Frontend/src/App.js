@@ -26,7 +26,7 @@ const App = () => {
   
 
   return (
-    <div>
+    <div >
       <GlobalStyle />
       <Header toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />

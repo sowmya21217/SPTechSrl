@@ -5,8 +5,9 @@ export const menuData =[
 ];
 
 export const footerData =[
-    {title: 'Home', link: '/home'},
-    {title: 'About', link: '/about'},
-    {title: 'services', link: '/services', content:'Web Application, Cloud Service, Product Design'},
+    {title: 'Home', link: '/'},
+    {title: 'About', link: '/About'},
+    {title: 'services', link: '/services'},
     {title: 'career', link: '/career'},
 ]
+

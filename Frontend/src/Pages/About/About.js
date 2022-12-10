@@ -40,9 +40,9 @@ const About = ({
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <div style={{background: 'lightgrey'}}>
        <GlobalStyle />
-      <Header toggle={toggle} style={{color: 'black'}}  />
+      <Header toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Section>
          <h1>{heading}</h1>

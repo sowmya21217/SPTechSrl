@@ -9,7 +9,7 @@ import Dropdown from '../../Components/Dropdown';
 import GlobalStyle from '../../Pages/globalStyles';
 
 const Section = styled.div`
-  padding: 1rem;
+  padding: 0.1rem;
   padding-bottom: 7rem;
  
 `;
@@ -34,6 +34,7 @@ const Textarea = styled.textarea`
     padding: 1rem; 
     width: 60%;
     border-bottom: 2px solid black;
+    background-color: lightgrey
 
     @media screen and(max-width: 768px){
         width: 50%;
@@ -43,13 +44,14 @@ const Textarea = styled.textarea`
 
 const Head = styled.div`
     font-size: 3rem;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
 `;
 
 const ContactForm = () => {
 
+  // for emailjs
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -70,19 +72,19 @@ const ContactForm = () => {
   };
 
 return (
-<div>
+<div style={{justifyContent: 'center', textAlign: 'center'}}>
   <GlobalStyle />
   <Header toggle={toggle} />
   <Dropdown isOpen={isOpen} toggle={toggle} />
  <Section>
   <Form ref={form} onSubmit={sendEmail}>   
     <WrapperGrid>
-      <Head>Contact Us </Head>
-      <Input  placeholder="Name"  type="text" name="name" />
-      <Input  placeholder="Company" type="text" name="company" />
+      <Head>Let's Talk About It! </Head>
+      <Input  placeholder="Name" type="text" name="name" />
+      <Input  placeholder="Company"  type="text" name="company"  />
       <Input placeholder="Email" type="email" name="email" />
       <Textarea placeholder="Message" name="message" rows="5" ></Textarea><br></br>
-      <Input style={{width: 100, border: '1px solid black', backgroundColor: 'black', color: 'white' }} to="/" primary ='true' type='submit' value='send' />
+      <Input style={{width: 100, border: '1px solid black', backgroundColor: 'black', color: 'white' }} to="/" primary ='true' type='submit' value='send'  />
     </WrapperGrid>
    </Form>
   </Section>

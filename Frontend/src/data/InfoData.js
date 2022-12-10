@@ -1,5 +1,7 @@
-import ImageOne from '../images/image2.jpg';
-import ImageTwo from '../images/image2.jpg';
+import ImageOne from '../images/webApplication.jpg';
+import ImageTwo from '../images/productDesign.jpg';
+import ImageThree from '../images/startUp.jpg';
+import ImageFour from '../images/cloud.jpg';
 
 export const InfoData = {
     heading: 'Web Applications',
@@ -23,7 +25,7 @@ export const InfoDataTwo = {
 export const InfoDataThree = {
     heading: 'Start up Services',
     paragraphOne: 'Talking about start-up consultancy, it is essential to communicate the right mindset to the new realities approaching the market. SP TECH SRL is committed to providing assistance, support and multi-year technical knowledge ccordingly to all mvp start-up whishes. This means that our team is available to solve everyday problems and to drive companies through the bureaucratic practices and technical needs of their journey.',
-    image: ImageTwo,
+    image: ImageThree,
     reverse: true,
     delay: 300
 }
@@ -31,7 +33,7 @@ export const InfoDataFour = {
     heading: 'Cloud Services',
     paragraphOne: 'SP Tech Srl will help you develop your devops culture in order to accelerate the deployment of data-based applications, ensure operational continuity and work towards adequate security standards. It will help you to integrate all the clouds you use into your work reality to reduce the complexity of your software delivery operations. Software that for your needs thanks to our devops services will be delivered more quickly and reliably.',
     buttonLabel: 'View More',
-    image: ImageTwo,
+    image: ImageFour,
     reverse: true,
     delay: 300
 }
@@ -54,19 +56,19 @@ export const InfoDataSix = {
     paragraphFour:'The development of web applications can range in every sector and is suitable for every reality. SP Tech Srl team will take care to involve the customer in every creative step and to support him even after delivery, ensuring a responsive and effective service.',
     paragraphFive:'Lean-Agile, Devops, Q&A Testing and many others are used in all stages of development.',
     heading1: 'Start Up Consulting ',
-    paragraphSix: 'has always stood out for its experience in start up consulting.',
+    paragraphSix: 'SP Tech Srl has always stood out for its experience in start up consulting.',
     paragraphSeven: 'We help the new growing realities and guide the new innovative start-ups to discover their potential.',
     paragraphEight: 'We provide services that are able to highlight their potential and help them in their entry into the market.',
     paragraphNine: 'In the early stage of the start-up consultancy, the SP Tech Srl team meets the start-up company team to know the project thoroughly and estimate the costs of building a first prototype.',
     paragraphTen: '  Thanks to the adoption of the lean strategy it is possible to focus only on the necessary functions. In this way the costs can vary and even starting from very small figures.Thanks to contacts with the most important start-up communities SP Tech Srl manages to combine  all the proper professionals, find resources and in general recover those enabling factors on which every new enterprise should aim.',
-    headingOne: 'Product Design',
-    heading4: 'Software Quality Assurance',
-    heading5: 'Start up Consulting',
-    heading6: 'cloud',
-    paragraphEleven: 'SP Tech Srl will help you develop your devops culture in order to accelerate the deployment of data-based applications, ensure operational continuity and work towards adequate security standards. It will help you to integrate all the clouds you use into your work reality to reduce the complexity of your software delivery operations. Software that for your needs thanks to our devops services will be delivered more quickly and reliably.',
-   
+    heading2: 'Product Design',
+    paragraphEleven: 'The development of a good UX UI involves several stages, and the product design must consider many aspects.  For SP Tech Srl, which always puts who’s facing at the center of everything, this service is a matter of responsibility. The user experience focuses on the figure of the user. To create a really positive one you need to have a thorough knowledge of who will use a new product or service. The design of a user experience is the result of a process that has many crucial moments (projects, wireframe, prototypes, models), but it is above all a work of identification, a process that stimulates curiosity and a fun task. ',
+    paragraphTwelve: 'You need to acquire constantly new graphic skills, understand psychology to predict how people normally respond to stimuli, understand marketing principles such as business needs and be willing to imagine how tomorrow’s communication it will be.',
+    heading3: 'Cloud Services ',
+    paragraphThirteen:'SP Tech Srl will help you develop your devops culture in order to accelerate the deployment of data-based applications, ensure operational continuity and work towards adequate security standards. It will help you to integrate all the clouds you use into your work reality to reduce the complexity of your software delivery operations. Software that for your needs thanks to our devops services will be delivered more quickly and reliably.',
+
     
 }
 export const InfoDataSeven = {
-    heading: 'Soon job opening will be available',
+    heading: 'Soon job opening will be available on this page',
 }

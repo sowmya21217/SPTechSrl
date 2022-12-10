@@ -5,7 +5,8 @@ import { Button } from "../Button/Button";
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  padding: 4rem 0rem;
+  padding: 1rem 0rem;
+  background: lightgrey;
 `;
 const Container = styled.div`
   padding: 3rem calc((100vw-1300px) / 2);

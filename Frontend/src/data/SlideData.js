@@ -1,6 +1,6 @@
 import ImageOne from '../images/image1.jpg';
 import ImageTwo from '../images/image2.jpg';
-import ImageThree from '../images/image3.jpg';
+
 
 export const SlideData = [
     {
@@ -34,23 +34,12 @@ export const SliderData = [
         alt: 'Home',
        },
        {
-           title: 'Welcome to SP Tech srl',
+           title: 'Upgrade your Future with SP Tech srl',
            path: '/services',
            image: ImageTwo,
            alt: 'Home',
        },
-       {
-        title: 'Welcome to SP Tech srl',
-        path: '/services',
-        image: ImageThree,
-        alt: 'Home',
-      },
-      {
-        title: 'Welcome to SP Tech srl',
-        path: '/services',
-        image: ImageTwo,
-        alt: 'Home',
-      }
+
     
 ];
 

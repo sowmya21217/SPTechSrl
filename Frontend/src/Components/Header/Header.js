@@ -26,7 +26,7 @@ const Nav = styled.nav`
 
 
 const NavLink = css`
-  color: #2C3E50;
+  color: white;
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -39,13 +39,13 @@ const NavLink = css`
 const Logo = styled(Link)`
   
   font-Weight: bold; 
-  font-size: 3rem;
+  font-size: 2rem;
  
   ${NavLink}
 
   img {
-    width: 4rem;
-    height: 3.5rem;
+    width: 2.5rem;
+    height: 2rem;
   }
   p{
     font-size: 0.9rem;
