@@ -1,5 +1,5 @@
 import React from "react";
-import styled ,{css} from 'styled-components/macro';
+import styled ,{css} from 'styled-components';
 import { Link } from 'react-router-dom';
 import { menuData } from "../../data/MenuData";
 import { Button } from "../Button/Button";
@@ -13,25 +13,44 @@ const Nav = styled.nav`
    z-index: 100;
    position: fixed;
    width: 100%;
-   background: grey;
+   backgroundColor: transparent;
+   shadowOpacity: 0,
+   z-index: 10;
+
+   &:hover{
+    background:lightgrey;
+    }
 
 `;
 
 
 
 const NavLink = css`
-  color: #fff;
+  color: #2C3E50;
   display: flex;
   align-items: center;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+
 `
 
 const Logo = styled(Link)`
-  font-style: italic;
+  
+  font-Weight: bold; 
+  font-size: 3rem;
+ 
   ${NavLink}
+
+  img {
+    width: 4rem;
+    height: 3.5rem;
+  }
+  p{
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
 `;
 
 const MenuBars = styled.i`
@@ -56,11 +75,15 @@ const NavMenu = styled.div`
   align-items: center;
   marign-right: -48px;
 
+
   @media screen and (max-width: 768px){
     display: none;
   }
 `;
+
 const NavMenuLinks = styled(Link)`
+  font-Weight: bold; 
+  font-size: 1rem;
   ${NavLink}
 `;
 
@@ -76,9 +99,10 @@ const NavBtn = styled.div`
 
 
 const Header = ({ toggle }) => {
+
   return (
     <Nav>
-      <Logo to="/">SPTECHSRL</Logo>
+      <Logo to="/"><img src="Images/logo.png"  alt="favicon"/>SP TECH SRL<p> &reg;</p></Logo>
       <MenuBars  onClick={toggle}/>
       <NavMenu>
         {menuData.map((item,index) => {
@@ -89,7 +113,7 @@ const Header = ({ toggle }) => {
         )})}
       </NavMenu>
       <NavBtn>
-        <Button to="/contacts" primary='true'>Contact Us</Button>
+        <Button to="/Contacts" primary='true'>Contact Us</Button>
       </NavBtn>
     </Nav>
   );

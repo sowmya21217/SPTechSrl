@@ -3,7 +3,8 @@ import styled from 'styled-components/macro';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button/Button';
 import { Link } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa';
+import { HiBars3 } from 'react-icons/hi2';
+
 
 
 const DropdownContainer = styled.div`
@@ -30,7 +31,7 @@ const Icon = styled.div`
    outline: none;
 
 `;
-const CloseIcon = styled(FaTimes)`
+const CloseIcon = styled(HiBars3)`
   color: #000d1a;
 `;
 const DropdownWrapper = styled.div``;

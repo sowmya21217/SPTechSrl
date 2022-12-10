@@ -1,16 +1,18 @@
 import React from "react";
-import styled  from "styled-components/macro";
+import styled  from "styled-components";
 import { footerData } from "../../data/MenuData";
 
 const Footer1 = styled.footer`
-  background: grey;
-  position:relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100vw;
-  padding: 0px 0px;
+padding: 80px 60px;
+background: grey;
+position: relative;
+bottom: 0;
+width: 100%;
+
+ 
+@media (max-width: 1000px) {
+  padding: 70px 30px;
+}
   color: #fff;
 
 `;
@@ -25,7 +27,9 @@ const Content = styled.div`
  color: #fff;
 
   @media screen and (max-width: 768px){
-  display: none;
+    height: 20px;
+  }
+
   } 
 `;
 
@@ -34,8 +38,8 @@ const FooterMenuLinks = styled.div``;
 const CopyRight = styled.div`
   text-align: center;
   justify-content: center;
-  textdecoration: none;
-  color: black;
+  text-decoration: none;
+  color: white;
 
 `;
 

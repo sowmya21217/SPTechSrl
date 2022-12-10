@@ -4,23 +4,21 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Input from '../../Components/Input/input';
 import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer /Footer';
 import { Form } from 'react-router-dom';
 import Dropdown from '../../Components/Dropdown';
-import GlobalStyle from '../globalStyles';
-const Section = styled.div`
- 
-`;
-const Section1 = styled.div`
-   padding: 10rem 0rem;
+import GlobalStyle from '../../Pages/globalStyles';
 
+const Section = styled.div`
+  padding: 1rem;
+  padding-bottom: 7rem;
  
 `;
+
 
 const WrapperGrid = styled.div`
    padding: 1rem calc((100vw-1300px) / 2);
    width: 90%;
-   height: 390px;
+   height: 400px;
    padding: 7rem 1rem;
    @media screen and(max-width: 768px){
     width: 20%;
@@ -38,7 +36,7 @@ const Textarea = styled.textarea`
     border-bottom: 2px solid black;
 
     @media screen and(max-width: 768px){
-        width: 20%;
+        width: 50%;
         padding: 1rem; 
     }
 `; 
@@ -50,7 +48,7 @@ const Head = styled.div`
     align-items: center;
 `;
 
-const Contacts = () => {
+const ContactForm = () => {
 
   const form = useRef();
 
@@ -86,13 +84,10 @@ return (
       <Textarea placeholder="Message" name="message" rows="5" ></Textarea><br></br>
       <Input style={{width: 100, border: '1px solid black', backgroundColor: 'black', color: 'white' }} to="/" primary ='true' type='submit' value='send' />
     </WrapperGrid>
-  </Form>
+   </Form>
   </Section>
-  <Section1>
-    <Footer />
-    </Section1>
   </div>
 );
 }
 
-export default Contacts;
+export default ContactForm;

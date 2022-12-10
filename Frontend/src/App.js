@@ -1,36 +1,45 @@
-import React, { useState} from 'react';
-import Header from './Components/Header/Header';
-import GlobalStyle from './Pages/globalStyles';
-import Hero from './Components/Hero/Hero';
-import { SliderData } from './data/SlideData'
-import Dropdown from './Components/Dropdown';
-import Footer from './Components/Footer /Footer';
-import InfoSection from './Components/InfoSection/InfoSection';
-import { InfoData, InfoDataFour, InfoDataThree, InfoDataTwo } from './data/InfoData';
-import InfoSection1 from './Components/InfoSection1/InfoSection1';
+import React, { useState } from "react";
+import Header from "./Components/Header/Header";
+import GlobalStyle from "./Pages/globalStyles";
+import Hero from "./Components/Hero/Hero";
+import { SliderData } from "./data/SlideData";
+import Dropdown from "./Components/Dropdown";
+import Footer from "./Components/Footer /Footer";
+import InfoSection from "./Components/InfoSection/InfoSection";
+import {
+  InfoData,
+  InfoDataFour,
+  InfoDataThree,
+  InfoDataTwo,
+} from "./data/InfoData";
+import InfoSection1 from "./Components/InfoSection1/InfoSection1";
+import ContactForm from "./Components/ContactForm/ContactForm";
+import Section from "./Components/Section/Section";
 
 
-
-function App(){
-  const [isOpen,setIsOpen] = useState(false);
+const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   };
+  
 
   return (
-    <>
+    <div>
       <GlobalStyle />
       <Header toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Hero  slides={SliderData}/> 
-      <InfoSection buttonLable={undefined} paragraphTwo={undefined} {...InfoData} />
-      <InfoSection1 paragraphTwo={undefined} buttonLable={undefined} {...InfoDataTwo} />
-      <InfoSection paragraphTwo={undefined} buttonLable={undefined} {...InfoDataThree} />
-      <InfoSection1 paragraphTwo={undefined} buttonLable={undefined} {...InfoDataFour} />
+      <Hero slides={SliderData} />
+      <Section />
+      <InfoSection {...InfoData} />
+      <InfoSection1 {...InfoDataTwo} />
+      <InfoSection {...InfoDataThree} />
+      <InfoSection1 {...InfoDataFour} />
+      <ContactForm />
       <Footer />
-    </>
+    </div>
   );
-}
+};
 
 export default App;
